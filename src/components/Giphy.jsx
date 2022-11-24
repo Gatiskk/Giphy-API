@@ -21,18 +21,14 @@ const Giphy = () => {
                     }
                 });
 
-                console.log(results)
             setData(results.data.data)
             } catch (err){
                 SetIsError(true)
                 setTimeout(() => SetIsError(false), 4000) // <-- Error message will dissapear after 4 seconds, after being initialized.
             }
-
             setIsLoading(false)
         }
-
         fetchData();
-
     },[search])
 
     const renderGifs = () => {
@@ -60,8 +56,6 @@ const Giphy = () => {
             )
         };
     };
-
-
 
     return (
         <div className="App">
