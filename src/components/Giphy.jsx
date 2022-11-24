@@ -14,9 +14,10 @@ const Giphy = () => {
             setIsLoading(true)
 
             try {
-                const results = await axios("https://api.giphy.com/v1/gifs/trending", {
+                const results = await axios.get(`https://api.giphy.com/v1/gifs/search?=name${search}`, {
                     params:{
                         api_key: "CRf4t5Mg6NTdEiErtpJM43bc86QW3f1L",
+                        q: search
                     }
                 });
 
@@ -27,13 +28,13 @@ const Giphy = () => {
                 setTimeout(() => SetIsError(false), 4000) // <-- Error message will dissapear after 4 seconds, after being initialized.
             }
 
-
             setIsLoading(false)
         }
 
         fetchData();
 
-    },[])
+    },[search])
+
     const renderGifs = () => {
         if(isLoading){
             return <Loader />
@@ -60,43 +61,20 @@ const Giphy = () => {
         };
     };
 
-    const handleSearchChange = (event) => {
-        setSearch(event.target.value)
-    }
 
-    const handleSubmit = async event => {
-        event.preventDefault();
-        SetIsError(false)
-            setIsLoading(true)
-
-            try {
-                const results = await axios("https://api.giphy.com/v1/gifs/search", {
-                    params: {
-                        api_key: "CRf4t5Mg6NTdEiErtpJM43bc86QW3f1L",
-                        q: search,
-                        limit: 90
-                    }
-                });
-                setData(results.data.data)
-            } catch(err) {
-                SetIsError(true)
-                setTimeout(() => SetIsError(false), 4000)
-            }
-        
-        setIsLoading(false)
-    };
 
     return (
-        <div className="m-2">
+        <div className="App">
             {renderError()}
-            <form className="form-inline justify-content-center m-2">
-                <input value={search} 
-                onChange={handleSearchChange} 
+            <div className="search">
+                <input 
                 type="text" 
-                placeholder="Search..." 
-                className="form-control" />
-                <button onClick={handleSubmit} type="submit" className="btn btn-primary mx-2">Go</button>
-            </form>
+                placeholder="Search..."
+                className="input"
+                onChange={event => setSearch(event.target.value)}
+                value={search}
+                 />
+            </div>
     <div className="container gifs">{renderGifs()}</div>
         </div>)
 }

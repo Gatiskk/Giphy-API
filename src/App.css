@@ -22,3 +22,14 @@ body {
    display: flow-root;
    width: 10%;
 }
+
+.search {
+    background-color: darkgray;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.input {
+    font-size: 25px;
+}
