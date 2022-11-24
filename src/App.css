@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+}
+
+.gifs {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gif {
+    padding: 0 2px;
+}
+
+.loader {
+    color: blue;
+}
+
+.banana {
+   display: flow-root;
+   width: 10%;
+}
