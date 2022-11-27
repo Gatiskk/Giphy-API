@@ -1,30 +1,30 @@
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .gifs {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
 
 .gif {
-    padding: 0 2px;
+  padding: 0 2px;
 }
 
 .loader {
-    color: blue;
+  color: blue;
 }
 
 .banana {
-   display: flow-root;
-   width: 10%;
+  display: flow-root;
+  width: 10%;
 }
 
 .form-control {
-    background-color: rgb(147, 147, 190);
+  background-color: rgb(147, 147, 190);
 }

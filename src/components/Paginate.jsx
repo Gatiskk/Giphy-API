@@ -1,6 +1,6 @@
 import React from "react";
 
-const Paginate = props => {
+const Paginate = (props) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(props.totalItems / props.itemsPerPage); i++) {
@@ -10,7 +10,7 @@ const Paginate = props => {
   return (
     <nav>
       <ul className="pagination pagination-sm justify-content-end border-0">
-        {pageNumbers.map(number => {
+        {pageNumbers.map((number) => {
           let classes = "page-item ";
           if (number === props.currentPage) {
             classes += "active";
