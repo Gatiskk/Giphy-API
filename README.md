@@ -8,7 +8,7 @@ Create an application to search for GIF images using Giphy API.
  5. Prettier
  6. dotenv for hiding API key
  
-## To run this project
+# To run this project
 ## 1. Request your API key to be able to run this application: https://developers.giphy.com/dashboard/?
 ## 2. Rename env.sample file to .env
 ## 3. In .env file put your API key in place of "YOUR_API_KEY"
