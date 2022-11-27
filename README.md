@@ -4,7 +4,10 @@ Create an application to search for GIF images using Giphy API.
  1. Visual Studio Code
  2. Bootstrap (CSS framework)
  3. Axios
- 4.  React
+ 4. React
+ 5. Prettier
+ 6. dotenv for hiding API key
+ 
 ## Available Scripts
 
 In the project directory, you can run:
