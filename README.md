@@ -12,7 +12,8 @@ Create an application to search for GIF images using Giphy API.
 
 In the project directory, you can run:
 
-### `npm start`
+### 1.`npm install`
+### 2.`npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
