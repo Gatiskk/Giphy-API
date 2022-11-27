@@ -12,6 +12,8 @@ Create an application to search for GIF images using Giphy API.
 
 In the project directory, you can run:
 
+## Request your API key to be able to run this application: https://developers.giphy.com/dashboard/?
+
 ### 1.`npm install`
 ### 2.`npm run start`
 
