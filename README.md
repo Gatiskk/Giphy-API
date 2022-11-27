@@ -6,6 +6,7 @@ Create an application to search for GIF images using Giphy API.
  3. Axios
  4. React
  5. Prettier
+ 6.dotenv for hiding API key
  
 ## Available Scripts
 
