@@ -10,7 +10,7 @@ Create an application to search for GIF images using Giphy API.
  
 # To run this project
 ## 1. Request your API key to be able to run this application: https://developers.giphy.com/dashboard/?
-## 2. Rename env.sample file to .env
+## 2. Rename .env_sample file to .env
 ## 3. In .env file put your API key in place of "YOUR_API_KEY"
 ## 4.`npm install`
 ## 5.`npm run start`
